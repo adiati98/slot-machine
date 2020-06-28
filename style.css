@@ -1,0 +1,110 @@
+:root {
+  --black: #262525;
+  --orange: #fc6b3f;
+  --blue: #84f2d6;
+  --pink: #fff6da;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
+}
+
+h1 {
+  color: var(--orange);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.slot {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 4rem;
+  color: var(--blue);
+  text-shadow: 2px 2px 5px var(--orange);
+}
+
+#slot1, #slot2, #slot3 {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.hidden {
+  font-size: 0;
+}
+
+.display {
+  color: var(--pink);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+#message {
+  transition: font-size 3000ms;
+  text-align: center;
+}
+
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: var(--black);
+  background-color: var(--orange);
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  transform: translate(-50%);
+  min-height: 3.5rem;
+  min-width: 15rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2.5px 2.5px 3px var(--pink);
+  outline: none;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: var(--black);
+  cursor: pointer;
+}
+
+@media all and (min-width: 718px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .container {
+    margin-top: 3rem;
+  }
+
+  .slot {
+    font-size: 8.5rem;
+  }
+
+  .display {
+    font-size: 4.5rem;
+    margin-top: -2rem;
+  }
+
+  button {
+    min-height: 4rem;
+    min-width: 20rem;
+    margin-top: 1.5rem;
+    top: 80%;
+  }
+}
